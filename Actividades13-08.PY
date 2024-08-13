@@ -1,5 +1,4 @@
 #1)
-"""
 nombre=input("Ingrese su nombre:")
 print("¡Hola",nombre+"!")
 
@@ -29,10 +28,10 @@ ausentes=int(input("¿Cuantas personas se ausentaron en el día? "))
 while ausentes < 0 or ausentes > 70:
     print("Indique un número de personas coherente")
     ausentes=int(input("¿Cuantas personas se ausentaron en el día? "))
-porcentajeAusentes=(ausentes*100)//70
+porcentajeAusentes=(ausentes*100)/70
 porcentajeAusentesSTR=str(porcentajeAusentes)
 print(porcentajeAusentesSTR+"% es el porcentaje de ausentes")
-"""
+
 #7
 medidaMetros=float(input("Ingrese la medida en metros: "))
 medidaCm=medidaMetros*100
@@ -45,3 +44,15 @@ medidaYarda=medidaPie/3
 print("Su medida en yardas es:",medidaYarda)
 
 #8
+nVendedor=int(input("Ingresar número del vendedor: "))
+salarioBase=250
+comisionPorVenta=40
+porcientoFinal=0
+ventasRealizadas=int(input("Ingresar ventas realizadas: "))
+comisionFinal=ventasRealizadas*comisionPorVenta
+for i in range(ventasRealizadas):
+    venta=float(input("Valor de la venta: "))
+    porcientoDeVenta=(venta*5)/100
+    porcientoFinal=porcientoFinal+porcientoDeVenta
+salarioTotal=salarioBase+comisionFinal+porcientoFinal
+print("Al vendedor con número:",nVendedor,"le corresponde un salario de:",salarioTotal,"pesos")
