@@ -1,4 +1,5 @@
 #1)
+"""
 nombre=input("Ingrese su nombre:")
 print("¡Hola",nombre+"!")
 
@@ -31,5 +32,16 @@ while ausentes < 0 or ausentes > 70:
 porcentajeAusentes=(ausentes*100)//70
 porcentajeAusentesSTR=str(porcentajeAusentes)
 print(porcentajeAusentesSTR+"% es el porcentaje de ausentes")
-
+"""
 #7
+medidaMetros=float(input("Ingrese la medida en metros: "))
+medidaCm=medidaMetros*100
+print("Su medida en centimetros:",medidaCm)
+medidaPulgada=medidaCm/2.54
+print("Su medida en pulgadas es:",medidaPulgada)
+medidaPie=medidaPulgada/12
+print("Su medida en pies es:",medidaPie)
+medidaYarda=medidaPie/3
+print("Su medida en yardas es:",medidaYarda)
+
+#8
