@@ -1,4 +1,5 @@
 #1)
+""""
 nombre=input("Ingrese su nombre:")
 print("¡Hola",nombre+"!")
 
@@ -10,7 +11,7 @@ print(num/4)
 nota1=float(input("Ingrese nota de Taller de programación I: "))
 nota2=float(input("Ingrese nota de Administración empresarial II: "))
 nota3=float(input("Ingrese nota de Marketing: "))
-print((nota1+nota2+nota3)/3)
+print("Su promedio fue de:",(nota1+nota2+nota3)/3)
 
 #4)
 num1=int(input("Ingrese el primer número: "))
@@ -21,7 +22,7 @@ print("La diferencia entre estos dos números es:",num1-num2)
 #5)
 factura=float(input("Ingrese el monto de la factura en $: "))
 iva=(21*factura)/100
-print("El monto total más el IVA es de:$"+factura+iva)
+print("El monto total más el IVA es de:$",factura+iva)
 
 #6)
 ausentes=int(input("¿Cuantas personas se ausentaron en el día? "))
@@ -56,3 +57,11 @@ for i in range(ventasRealizadas):
     porcientoFinal=porcientoFinal+porcientoDeVenta
 salarioTotal=salarioBase+comisionFinal+porcientoFinal
 print("Al vendedor con número:",nVendedor,"le corresponde un salario de:",salarioTotal,"pesos")
+"""
+#9
+dineroInvertido=float(input("¿Cuanto dinero quiere invertir? "))
+pagaMensual=0
+for i in range(6):
+ plazo=(dineroInvertido*2)/100
+ pagaMensual=pagaMensual+plazo
+print("En seis meses, usted ganará $",pagaMensual)
